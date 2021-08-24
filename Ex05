@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main () {
+		
+//14) Ler um valor e escrever se é positivo ou negativo (considere o valor zero como positivo). 
+
+int numero, par, impar;
+
+printf("Digite um número: ");
+scanf("%d", &numero);
+
+    if (numero %2==0)
+    printf("\nO número é par");
+
+        else
+
+        printf("\nO número é impar");
+        printf("\n\n");
+
+system ("pause");
+return 0;
+
+} 
