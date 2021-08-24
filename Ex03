@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main () {
+
+//18) Ler o ano atual e o ano de nascimento de uma pessoa. Escrever uma mensagem que diga se ela
+//poderá ou não votar este ano (não é necessário considerar o mês em que a pessoa nasceu). 
+
+int idade, ano;
+
+printf("Qual ano você nasceu? ");
+scanf("%d", &idade);
+
+printf("Qual o ano atual? ");
+scanf("%d", &ano);
+
+	idade = (ano - idade);
+	
+	if (idade >=18)
+	
+	
+		printf("\n\nVocê poderá votar!");
+	
+	
+		else 
+		
+		printf("\nVocê não pode votar");
+	
+		
+printf("\n\n");
+system ("pause");
+return 0;
+
+
+
+}

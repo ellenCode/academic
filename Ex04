@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <conio.h>
+
+int main(){
+	// faça um algoritmo para calcular o novo salario de um funcionário. Se salario até 500 terão aumento de 20% os demais terão aumento de 10%.
+	
+	float salario, novo_salario;
+	
+	printf("Qual o seu salario?");
+	scanf("%f" , &salario);
+	
+		novo_salario = salario * 1.20;
+	
+			if (salario <=500)
+				printf("\nSeu novo salario eh %f " , novo_salario);
+	
+	
+	
+				else {
+	
+						novo_salario = salario * 1.10;
+						printf("\nSeu novo salario eh %.2f " , novo_salario);
+					}
+
+
+	printf("\n\n");
+	system ("pause");
+	return 0;
+	 	
+	
+}
