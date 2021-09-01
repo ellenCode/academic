@@ -1,25 +1,21 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <conio.h>
 
 int main(){
+	// faça um algoritmo para calcular o novo salario de um funcionário. Se salario até 500 terão aumento de 20% os demais terão aumento de 10%.
 	
-	//Escreva um programa que leia um numero inteiro N e mostre na tela os N primereiros pares.
+	float salario, novo_salario;
 	
-	int numero, i, par;
-	
-
-    printf("\nDigite um numero: ");
-    scanf("%d", &numero);
-    i = 0;
-    par = 2; 
-  
-    printf("Os %d primeiros pares sao:\n", numero);
-         while (i < numero) {
-            printf ("%d\n", par);
-             par = par + 2; 
-             i = i + 1;
-}
-	
-return 0 ;	
-	
-}
+	printf("Qual o seu salario?");
+	scanf("%f" , &salario);
+		novo_salario = salario * 1.20;
+			if (salario <=500)
+				printf("\nSeu novo salario eh %f " , novo_salario);
+				else {
+					novo_salario = salario * 1.10;
+					printf("\nSeu novo salario eh %.2f " , novo_salario);
+					}
+	printf("\n\n");
+	system ("pause");
+	return 0;
